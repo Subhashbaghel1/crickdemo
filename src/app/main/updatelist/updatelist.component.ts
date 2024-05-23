@@ -33,7 +33,7 @@ export class UpdatelistComponent {
         'password': new FormControl('', Validators.required),
       }
     )
-
+ 
 
     this.apiservice.employeeDataget(this.router.snapshot.params['empid'],data).subscribe((res) =>{
       console.log("ressssss",res);
